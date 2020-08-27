@@ -7,9 +7,6 @@
     margin: 0 auto;
     display: block;
 }
-.fv .mainview{
-    width: 840px;
-}
 
 @media screen and (max-width: 768px){
     .fv img {
@@ -63,10 +60,9 @@
 
 .teiki5 img {
     position: absolute;
-    width: 276px;
-    height: 52px;
-    bottom: 35px;
-    left: 303px;
+    width: 42%;
+    bottom: 8%;
+    right: 11%;
 }
 
 .teiki4 {
@@ -81,17 +77,16 @@
 
 .teiki4 img {
     position: absolute;
-    width: 203px;
-    height: 40px;
-    top: 202px;
-    left: 389px;
+    width: 33%;
+    bottom: 12%;
+    right: 8%;
 }
 
 .teiki3 {
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 216px;
+    height: 235px;
     background: url(../images/vgdm30/set03.jpg);
     background-position: center;
     background-size: cover;
@@ -99,17 +94,16 @@
 
 .teiki3 img {
     position: absolute;
-    width: 203px;
-    height: 40px;
-    top: 142px;
-    left: 391px;
+    width: 31%;
+    right: 8%;
+    bottom: 15%;
 }
 
 .teiki2 {
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 220px;
+    height: 252px;
     background: url(../images/vgdm30/set02.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -118,10 +112,9 @@
 
 .teiki2 img {
     position: absolute;
-    width: 163px;
-    height: 43px;
-    top: 124px;
-    left: 426px;
+    width: 25%;
+    bottom: 21%;
+    right: 8%;
 }
 
 .teiki1{
