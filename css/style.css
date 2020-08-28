@@ -36,7 +36,7 @@
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 463px;
+    height: 539px;
     background: url(../images/vgdm30/set05.jpg);
     background-position: center;
     background-size: cover;
@@ -63,7 +63,7 @@
 .teiki5 img {
     position: absolute;
     width: 42%;
-    bottom: 8%;
+    bottom: 21%;
     right: 11%;
 }
 
@@ -71,7 +71,7 @@
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 289px;
+    height: 369px;
     background: url(../images/vgdm30/set04.jpg);
     background-position: center;
     background-size: cover;
@@ -80,7 +80,7 @@
 .teiki4 img {
     position: absolute;
     width: 33%;
-    bottom: 12%;
+    bottom: 31%;
     right: 8%;
 }
 
@@ -88,7 +88,7 @@
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 235px;
+    height: 318px;
     background: url(../images/vgdm30/set03.jpg);
     background-position: center;
     background-size: cover;
@@ -98,7 +98,7 @@
     position: absolute;
     width: 31%;
     right: 8%;
-    bottom: 15%;
+    bottom: 37%;
 }
 
 .teiki2 {
