@@ -197,7 +197,7 @@
     display: none;
 }
 
-img#line {
+#wrapper img#line {
     display: none;
     position: fixed;
     right: 15px;

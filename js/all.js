@@ -25,7 +25,7 @@ $(document).ready(function () {
             $("#fb-root").attr({
                 style: "display: none;"
             });
-            $("img#line").attr({
+            $("#wrapper img#line").attr({
                 style: "display: block;"
             });
             $(".line_alert").attr({
