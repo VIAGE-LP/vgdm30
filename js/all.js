@@ -25,6 +25,12 @@ $(document).ready(function () {
             $("#fb-root").attr({
                 style: "display: none;"
             });
+            $("#line").attr({
+                style: "display: block;"
+            });
+            $(".line_alert").attr({
+                style: "display: block;"
+            });
         } else if ((formTop <= (scrollPos + windowHeight / 2)) && (width > 768)) {
             $("#fb-root").attr({
                 style: "display: block;"
