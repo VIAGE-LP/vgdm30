@@ -1,9 +1,4 @@
 $(document).ready(function () {
-    $('.close_btn').click(function (e) {
-        e.preventDefault();
-        $('.modalbox').hide();
-    });
-
     // 立即訂購btn動態
     $('.buybtn').click(function (e) {
         e.preventDefault();
@@ -25,13 +20,16 @@ $(document).ready(function () {
             $("#fb-root").attr({
                 style: "display: none;"
             });
-            $("#wrapper img#line").attr({
-                style: "display: block;"
+            $("#wh-widget-send-button").attr({
+                style: "display: block;width: 261px;height: 94px;"
             });
             $(".line_alert").attr({
-                style: "display: block;"
+                style: "display: block"
             });
         } else if ((formTop <= (scrollPos + windowHeight / 2)) && (width > 768)) {
+            $("#wh-widget-send-button").attr({
+                style: "display: none ;width: 0px;height: 0px;"
+            });
             $("#fb-root").attr({
                 style: "display: block;"
             });
