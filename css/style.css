@@ -1,32 +1,60 @@
 .fv {
     width: 100%;
+    
 }
-
 .fv img {
     width: 640px;
     margin: 0 auto;
     display: block;
 }
+.fv .mainview{
+    width: 840px;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     .fv img {
         width: 100%;
     }
-    .fv .mainview {
+    .fv .mainview{
         width: 100%;
     }
 }
+.anniversary_1{
+    cursor: pointer;
+}
+.anniversary_2 {
+    display:none;
+    position:fixed;
+    z-index:98;
+    top:-3%;
+    right:-33.3vh;
+    left:-33.3vh;
+}
+.anniversary_2 img{
+    display:none;
+    width:30%;
+}
 
-/*----------------------------------------------------
-	offer _pc
-----------------------------------------------------*/
+@media screen and (max-width: 768px){
+    .anniversary_2 {
+        display:none;
+        position:fixed;
+        z-index:98;
+        top:5%;
+        right:-33.3vh;
+        left:-33.3vh;
+    }
+    .anniversary_2 img{
+        display:none;
+        width:50%;
+    }
+}
 
 .cv {
     width: 100%;
     position: relative;
     height: auto;
 }
-
 .cv::after {
     padding-bottom: 20px;
     content: '';
@@ -36,7 +64,7 @@
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 691px;
+    height: 810px;
     background: url(../images/vgdm30/set05.jpg);
     background-position: center;
     background-size: cover;
@@ -62,8 +90,9 @@
 
 .teiki5 img {
     position: absolute;
-    bottom: 15%;
-    right: 9.2%;
+    height: 53px;
+    bottom: 126px;
+    right: 47px;
 }
 
 .teiki4 {
@@ -78,15 +107,16 @@
 
 .teiki4 img {
     position: absolute;
-    bottom: 28%;
-    right: 4.6%;
+    height: 40px;
+    bottom: 116px;
+    right: 56px;
 }
 
 .teiki3 {
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 283px;
+    height: 278px;
     background: url(../images/vgdm30/set03.jpg);
     background-position: center;
     background-size: cover;
@@ -94,15 +124,16 @@
 
 .teiki3 img {
     position: absolute;
-    right: 4.5%;
-    bottom: 12%;
+    height: 40px;
+    bottom: 77px;
+    right: 47px;
 }
 
 .teiki2 {
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 283px;
+    height: 278px;
     background: url(../images/vgdm30/set02.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -111,11 +142,12 @@
 
 .teiki2 img {
     position: absolute;
-    bottom: 12%;
-    right: 5%;
+    height: 43px;
+    bottom: 78px;
+    right: 53px;
 }
 
-.teiki1 {
+.teiki1{
     margin: 0 auto;
     position: relative;
     width: 640px;
@@ -124,9 +156,8 @@
     background-position: center;
     background-size: cover;
 }
-
-@media screen and (max-width: 768px) {
-    .cv {
+@media screen and (max-width: 768px){
+    .cv{
         display: none;
     }
 }
@@ -134,66 +165,51 @@
 /*----------------------------------------------------
 	offer _ m
 ----------------------------------------------------*/
-
 .cv_m {
     display: none;
 }
-
-@media screen and (max-width: 768px) {
-    .cv_m {
-        display: block;
-        width: 100%;
-    }
-    .cv_m img {
-        width: 100%;
-    }
-}
-
-.sns {
+@media screen and (max-width: 768px){
+.cv_m {
+    display: block;
     width: 100%;
 }
-
-.sns_img {
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
+.cv_m img{
+    width: 100%;
 }
-
-.sns_btn {
-    text-align: center;
 }
-
-.sns_btn ul li {
-    display: inline-block;
-    margin: 0 8px;
-    cursor: pointer;
-}
-
-.buybtn {
+.sns{
+    width: 100%;
+ }
+ .sns_img{max-width: 1000px;margin: 0 auto;position: relative;}
+ .sns_btn {
+     text-align: center;
+ }
+ .sns_btn ul li{
+     display: inline-block;
+     margin: 0 8px;
+     cursor: pointer;
+ }
+ 
+ .buybtn{
     width: 174px;
     position: fixed;
     right: 0;
     bottom: 76px;
     z-index: 99;
 }
-
-.buybtn img {
-    width: 100%;
-    height: auto;
-}
-
-@media screen and (max-width: 768px) {
-    .buybtn {
+.buybtn img{width: 100%; height: auto;}
+@media screen and (max-width: 768px){
+    .buybtn{
         width: 28%;
         max-width: 170px;
     }
 }
 
-#wh-widget-send-button {
+#wh-widget-send-button{
     display: none;
 }
 
-#fb-root {
+#fb-root{
     display: none;
 }
 
@@ -204,7 +220,6 @@
     bottom: 12px;
     z-index: 99;
 }
-
 
 .line_alert {
     display: none;
@@ -218,8 +233,7 @@
     right: 90px;
     z-index: 99;
 }
-
-.line_alert:before {
+.line_alert:before{
     content: '';
     position: absolute;
     background: white;
@@ -237,8 +251,7 @@
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
-.line_alert p {
+.line_alert p{
     padding: 5px 10px 5px 10px;
     line-height: 18px;
     max-height: 34px;
@@ -249,12 +262,14 @@
     font-size: 14px;
 }
 
-.fv .colorRWD {
-    width: 75%;
+.SP{
+    display: none;
 }
-
-@media screen and (max-width: 768px) {
-    .fv .colorRWD {
-        width: 100%;
-    }
+@media screen and (max-width: 768px){
+.PC{
+    display: none;
+}
+.SP{
+    display: block;
+}
 }

@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/nav.css" type="text/css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- ▲自由編集箇所▲ -->
 </head>
 
@@ -76,100 +78,103 @@
                     <!-- main pc -->
                     <div class="fv">
                         <img src="images/vgdm30/01_banner.jpg" alt="">
-                        <img src="images/vgdm30/01_fv.jpg" title="擁有完美胸型的捷徑-晚安立體美型內衣">
-                        <img src="images/vgdm30/02_champion.jpg">
-                        <img src="images/vgdm30/03_voice.jpg">
-                        <img src="images/vgdm30/04_first.jpg">
-                        <img src="images/vgdm30/05_step01.jpg">
+                        <img class="mainview" src="images/vgdm30/01_fv.jpg" title="擁有完美胸型的捷徑-晚安立體美型內衣">
+                        <img class="anniversary_1" src="images/vgdm30/02_million.jpg">
+                        <div class="anniversary_2" style="display:none">
+                            <img src="./images/detail.png" alt="">
+                        </div>
+                        <!-- 彈跳視窗 -->
+                        <script>
+                            //週年慶活動辦法下拉選單
+                            $(".anniversary_2 img,.anniversary_2").hide();
+                            $('.anniversary_1').click(function (e) {
+                                e.preventDefault();
+                                $(".anniversary_2 img,.anniversary_2").attr("style", "display:block;");
+                            });
+                            $('.anniversary_2').click(function (e) {
+                                e.preventDefault();
+                                $(".anniversary_2 img,.anniversary_2").hide();
+                            });
+                        </script>
+                        <img src="images/vgdm30/03_keypoint.jpg">
+                        <img src="images/vgdm30/04_blogger.jpg">
+                        <img src="images/vgdm30/05_magzine.jpg">
                     </div>
-                    <div class="cv">
-                        <!-- 5入組 -->
-                        <div class="teiki5">
-                            <a href="#buy"><img src="images/btn gif/teiki_btn.gif" style="opacity: 1;"
-                                    title="全色一次擁有"></a>
+                    <div id="sale">
+                        <div class="cv">
+                            <!-- 5入組 -->
+                            <div class="teiki5">
+                                <a href="#buy"><img src="images/btn gif/teiki_btn.gif" style="opacity: 1;"
+                                        title="全色一次擁有"></a>
+                            </div>
+                            <!-- 4入組 -->
+                            <div class="teiki4">
+                                <a href="#buy"><img src="images/btn gif/teiki04_btn.gif" style="opacity: 1;"></a>
+                            </div>
+                            <!-- 3入組 -->
+                            <div class="teiki3">
+                                <a href="#buy"><img src="images/btn gif/teiki03_btn.gif" style="opacity: 1;"></a>
+                            </div>
+                            <!-- 2入組 -->
+                            <div class="teiki2">
+                                <a href="#buy"><img src="images/btn gif/nor_btn_2.gif" style="opacity: 1;"></a>
+                            </div>
                         </div>
-                        <!-- 4入組 -->
-                        <div class="teiki4">
-                            <a href="#buy"><img src="images/btn gif/teiki04_btn.gif" style="opacity: 1;"></a>
+                        <!-- offer 531 m -->
+                        <div class="cv_m">
+                            <!-- 5入組 -->
+                            <a href="#buy">
+                                <img src="images/vgdm30/set05.jpg" style="position: relative;">
+                            </a>
+                            <!-- 4入組 -->
+                            <a href="#buy">
+                                <img src="images/vgdm30/set04.jpg">
+                            </a>
+                            <!-- 3入組 -->
+                            <a href="#buy">
+                                <img src="images/vgdm30/set03.jpg">
+                            </a>
+                            <!-- 2入組 -->
+                            <a href="#buy">
+                                <img src="images/vgdm30/set02.jpg">
+                            </a>
                         </div>
-                        <!-- 3入組 -->
-                        <div class="teiki3">
-                            <a href="#buy"><img src="images/btn gif/teiki03_btn.gif" style="opacity: 1;"></a>
-                        </div>
-                        <!-- 2入組 -->
-                        <div class="teiki2">
-                            <a href="#buy"><img src="images/btn gif/nor_btn_2.gif" style="opacity: 1;"></a>
-                        </div>
+                    </div>
 
-                    </div>
-                    <!-- offer 531 m -->
-                    <div class="cv_m">
-                        <!-- 5入組 -->
-                        <a href="#buy">
-                            <img src="images/vgdm30/set05.jpg" style="position: relative;">
-                        </a>
-                        <!-- 4入組 -->
-                        <a href="#buy">
-                            <img src="images/vgdm30/set04.jpg">
-                        </a>
-                        <!-- 3入組 -->
-                        <a href="#buy">
-                            <img src="images/vgdm30/set03.jpg">
-                        </a>
-                        <!-- 2入組 -->
-                        <a href="#buy">
-                            <img src="images/vgdm30/set02.jpg">
-                        </a>
-                    </div>
-                    <!-- newcolor -->
-                    <section class="fv">
-                        <div class="center">
-                            <img src="images/vgdm30/06_step02.jpg" alt="">
-                            <img class="colorRWD" src="images/vgdm30/06_color.jpg" alt="">
-                        </div>
-                    </section>
                     <a id="buy"></a>
 
                     <!-- size -->
                     <section class="fv">
                         <div class="center">
-                            <img src="images/vgdm30/07_step03.jpg" alt="">
                             <img src="images/vgdm30/07_size.jpg" alt="">
-                            <img src="images/vgdm30/08_step04.jpg" alt="">
+                            <img src="images/vgdm30/08_contact.jpg" alt="">
                         </div>
                     </section>
                 </section>
-                <!-- <section class="sns_btn">
+                <section class="sns_btn">
                     <ul>
-                        <li><a href="https://www.instagram.com/viage_tw/?hl=zh-tw" target="blank">
-                                <img id="ig" src="images/s_ig.png" alt=""></a>
-                        </li>
-                        <li><a href=" https://line.me/R/ti/p/%40fhl1857j" target="blank" class="line_link">
-                                <img id="line" src="images/s_line.png" alt=""></a>
+                        <li>
+                            <div class="PC">
+                                <a href="https://line.me/R/ti/p/%40fhl1857j" target="blank">
+                                    <img src="images/line btn.png" alt="加入好友" style="width:55%">
+                                </a>
+                            </div>
+                            <div class="SP">
+                                <a href="https://line.me/R/oaMessage/@fhl1857j/?獲得老顧客專屬優惠" target="blank">
+                                    <img src="images/SP_line btn.png" alt="加入好友" style="width:85%">
+                                </a>
+                            </div>
                         </li>
                     </ul>
-                </section> -->
+                </section>
 
                 <!-- GetButton.io widget -->
                 <div class="line_alert">
                     <p>點我索取優惠</p>
                 </div>
-                <script type="text/javascript">
-                    (function () {
-                        var options = {
-                            // facebook: "385203498713173", // Facebook page ID
-                            line: "//line.me/R/oaMessage/@fhl1857j/?查詢老顧客獨享優惠",// Line QR code URL
-                            // call_to_action: "點我索取優惠", // Call to action
-                            button_color: "#FF6550", // Color of button
-                            position: "right", // Position may be 'right' or 'left'
-                            order: "line", // Order of buttons
-                        };
-                        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-                        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-                        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-                        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-                    })();
-                </script>
+                <a href=" https://line.me/R/ti/p/%40fhl1857j" target="blank" class="line_link">
+                    <img id="line" src="images/s_line.png" alt=""></a>
+
                 <!-- /GetButton.io widget -->
                 <!-- ▲自由編集箇所▲ -->
             </div>
@@ -202,8 +207,6 @@
     </div>
     <!-- wrapper End -->
     <!-- 網頁設計師編輯區塊 -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/all.js"></script>
 </body>
 
