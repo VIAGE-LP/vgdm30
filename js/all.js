@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    $('.close_btn').click(function (e) {
+        e.preventDefault();
+        $('.modalbox').hide();
+    });
+
     // 立即訂購btn動態
     $('.buybtn').click(function (e) {
         e.preventDefault();
@@ -32,3 +37,4 @@ $(document).ready(function () {
             });
         } 
     });
+});

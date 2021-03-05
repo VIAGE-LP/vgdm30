@@ -1,60 +1,32 @@
 .fv {
     width: 100%;
-    
 }
+
 .fv img {
     width: 640px;
     margin: 0 auto;
     display: block;
 }
-.fv .mainview{
-    width: 840px;
-}
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .fv img {
         width: 100%;
     }
-    .fv .mainview{
+    .fv .mainview {
         width: 100%;
     }
 }
-.anniversary_1{
-    cursor: pointer;
-}
-.anniversary_2 {
-    display:none;
-    position:fixed;
-    z-index:98;
-    top:-3%;
-    right:-33.3vh;
-    left:-33.3vh;
-}
-.anniversary_2 img{
-    display:none;
-    width:30%;
-}
 
-@media screen and (max-width: 768px){
-    .anniversary_2 {
-        display:none;
-        position:fixed;
-        z-index:98;
-        top:5%;
-        right:-33.3vh;
-        left:-33.3vh;
-    }
-    .anniversary_2 img{
-        display:none;
-        width:50%;
-    }
-}
+/*----------------------------------------------------
+	offer _pc
+----------------------------------------------------*/
 
 .cv {
     width: 100%;
     position: relative;
     height: auto;
 }
+
 .cv::after {
     padding-bottom: 20px;
     content: '';
@@ -64,7 +36,7 @@
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 691px;
+    height: 740px;
     background: url(../images/vgdm30/set05.jpg);
     background-position: center;
     background-size: cover;
@@ -90,16 +62,16 @@
 
 .teiki5 img {
     position: absolute;
-    height: 53px;
-    bottom: 114px;
-    right: 47px;
+    bottom: 14%;
+    right: 7%;
+    width: 48%;
 }
 
 .teiki4 {
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 369px;
+    height: 380px;
     background: url(../images/vgdm30/set04.jpg);
     background-position: center;
     background-size: cover;
@@ -107,16 +79,16 @@
 
 .teiki4 img {
     position: absolute;
-    height: 40px;
-    bottom: 116px;
-    right: 56px;
+    bottom: 30%;
+    right: 5.6%;
+    width: 33%;
 }
 
 .teiki3 {
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 248px;
+    height: 283px;
     background: url(../images/vgdm30/set03.jpg);
     background-position: center;
     background-size: cover;
@@ -124,16 +96,17 @@
 
 .teiki3 img {
     position: absolute;
-    height: 40px;
-    bottom: 47px;
-    right: 47px;
+    right: 4.5%;
+    bottom: 14%;
+    width: 33%;
+
 }
 
 .teiki2 {
     margin: 0 auto;
     position: relative;
     width: 640px;
-    height: 252px;
+    height: 283px;
     background: url(../images/vgdm30/set02.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -142,12 +115,12 @@
 
 .teiki2 img {
     position: absolute;
-    height: 43px;
-    bottom: 53px;
-    right: 53px;
+    bottom: 15%;
+    right: 5%;
+    width: 33%;
 }
 
-.teiki1{
+.teiki1 {
     margin: 0 auto;
     position: relative;
     width: 640px;
@@ -156,8 +129,9 @@
     background-position: center;
     background-size: cover;
 }
-@media screen and (max-width: 768px){
-    .cv{
+
+@media screen and (max-width: 768px) {
+    .cv {
         display: none;
     }
 }
@@ -165,51 +139,66 @@
 /*----------------------------------------------------
 	offer _ m
 ----------------------------------------------------*/
+
 .cv_m {
     display: none;
 }
-@media screen and (max-width: 768px){
-.cv_m {
-    display: block;
+
+@media screen and (max-width: 768px) {
+    .cv_m {
+        display: block;
+        width: 100%;
+    }
+    .cv_m img {
+        width: 100%;
+    }
+}
+
+.sns {
     width: 100%;
 }
-.cv_m img{
-    width: 100%;
+
+.sns_img {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
 }
+
+.sns_btn {
+    text-align: center;
 }
-.sns{
-    width: 100%;
- }
- .sns_img{max-width: 1000px;margin: 0 auto;position: relative;}
- .sns_btn {
-     text-align: center;
- }
- .sns_btn ul li{
-     display: inline-block;
-     margin: 0 8px;
-     cursor: pointer;
- }
- 
- .buybtn{
+
+.sns_btn ul li {
+    display: inline-block;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.buybtn {
     width: 174px;
     position: fixed;
     right: 0;
     bottom: 76px;
     z-index: 99;
 }
-.buybtn img{width: 100%; height: auto;}
-@media screen and (max-width: 768px){
-    .buybtn{
+
+.buybtn img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .buybtn {
         width: 28%;
         max-width: 170px;
     }
 }
 
-#wh-widget-send-button{
+#wh-widget-send-button {
     display: none;
 }
 
-#fb-root{
+#fb-root {
     display: none;
 }
 
@@ -220,6 +209,7 @@
     bottom: 12px;
     z-index: 99;
 }
+
 
 .line_alert {
     display: none;
@@ -233,7 +223,8 @@
     right: 90px;
     z-index: 99;
 }
-.line_alert:before{
+
+.line_alert:before {
     content: '';
     position: absolute;
     background: white;
@@ -251,7 +242,8 @@
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-.line_alert p{
+
+.line_alert p {
     padding: 5px 10px 5px 10px;
     line-height: 18px;
     max-height: 34px;
@@ -262,14 +254,12 @@
     font-size: 14px;
 }
 
-.SP{
-    display: none;
+.fv .colorRWD {
+    width: 75%;
 }
-@media screen and (max-width: 768px){
-.PC{
-    display: none;
-}
-.SP{
-    display: block;
-}
+
+@media screen and (max-width: 768px) {
+    .fv .colorRWD {
+        width: 100%;
+    }
 }
