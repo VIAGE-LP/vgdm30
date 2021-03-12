@@ -1,9 +1,4 @@
 $(document).ready(function () {
-    $('.close_btn').click(function (e) {
-        e.preventDefault();
-        $('.modalbox').hide();
-    });
-
     // 立即訂購btn動態
     $('.buybtn').click(function (e) {
         e.preventDefault();
@@ -18,7 +13,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var scrollPos = $(window).scrollTop();
         var windowHeight = $(window).height();
-        var formTop = $('#lp_form').position().top;
+        var formTop = $('#acs_lp_form').position().top;
         var width = $(window).width();
 
         if ((formTop <= (scrollPos + windowHeight / 2)) && (width <= 768)) {
